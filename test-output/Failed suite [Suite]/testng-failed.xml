@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="FireFoxTest">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.selenium.hackathon.tests.newLoginTest"/>
+    </classes>
+  </test> <!-- FireFoxTest -->
+  <test name="Chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.selenium.hackathon.tests.newLoginTest"/>
+    </classes>
+  </test> <!-- Chrome -->
+  <test name="Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.selenium.hackathon.tests.newLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="incorrectPassword"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.newLoginTest -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test name="FireFoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.selenium.hackathon.tests.newLoginTest">
+        <methods>
+          <include name="forgotPassword"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="incorrectEmail"/>
+          <include name="incorrectPassword"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.newLoginTest -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+  <test name="Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.selenium.hackathon.tests.newLoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="incorrectPassword"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.newLoginTest -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test name="Chrome(failed)(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.selenium.hackathon.tests.newLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="incorrectPassword"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.newLoginTest -->
+    </classes>
+  </test> <!-- Chrome(failed)(failed) -->
+  <test name="FireFoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.selenium.hackathon.tests.newLoginTest">
+        <methods>
+          <include name="forgotPassword"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="incorrectEmail"/>
+          <include name="incorrectPassword"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.newLoginTest -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+  <test name="FireFoxTest(failed)(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.selenium.hackathon.tests.newLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="incorrectPassword"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.newLoginTest -->
+    </classes>
+  </test> <!-- FireFoxTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

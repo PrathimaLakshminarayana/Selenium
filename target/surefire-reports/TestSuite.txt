@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 4, Errors: 0, Skipped: 12, Time elapsed: 0.761 s <<< FAILURE! - in TestSuite
+setUp(com.selenium.hackathon.tests.freeTrailTest)  Time elapsed: 0.535 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+
+
+setUp(com.selenium.hackathon.tests.homePageTest)  Time elapsed: 0.554 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+
+
+setUp(com.selenium.hackathon.tests.loginTest)  Time elapsed: 0.555 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+
+
+setUp(com.selenium.hackathon.tests.newLoginTest)  Time elapsed: 0.556 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+
+

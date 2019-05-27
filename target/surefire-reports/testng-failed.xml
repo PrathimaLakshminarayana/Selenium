@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.selenium.hackathon.tests.homePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="logOutFunctionality"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.homePageTest -->
+      <class name="com.selenium.hackathon.tests.newLoginTest">
+        <methods>
+          <include name="forgotPassword"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="incorrectEmail"/>
+          <include name="incorrectPassword"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.newLoginTest -->
+      <class name="com.selenium.hackathon.tests.freeTrailTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="E_SignUpToXDC"/>
+          <include name="C_SignUpToXDC"/>
+          <include name="D_SignUpToXDC"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.freeTrailTest -->
+      <class name="com.selenium.hackathon.tests.loginTest">
+        <methods>
+          <include name="incorrectEmail"/>
+          <include name="forgotPassword"/>
+          <include name="loginpageTest"/>
+          <include name="setUp"/>
+          <include name="incorrectPassword"/>
+        </methods>
+      </class> <!-- com.selenium.hackathon.tests.loginTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
